@@ -1,0 +1,41 @@
+<style>
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+nav ul {
+	list-style: none;
+	font-size: 24px;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li  a {
+	position: relative;
+	text-decoration: none;
+	color: #ffffff;
+	margin: 10px;
+	padding-top: 5px;
+	padding-right: 5px;
+	border-top: 3px solid #ffffff;
+}
+nav ul li a:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	bottom: -10px;
+	background-color: #ffffff;
+	width: 0px;
+	height: 3px;
+	transition: all 0.4s;
+}
+nav ul li a:hover {
+	color: #eed500;
+}
+nav ul li a:hover:after {
+	width: 100%
+}
+</style>
